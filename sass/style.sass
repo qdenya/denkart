@@ -1,0 +1,329 @@
+body
+  font-family: "Museo Sans"
+  background: #F2F2F2
+
+.main
+  &_container
+    max-width: 1200px
+    margin: auto
+  &_wrapper
+    background: url(../img/main.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+    display: flex
+    background-position: center
+  &_content
+    margin-left: auto
+    width: 50%
+    background: rgba(0, 0, 0, 0.6)
+    padding: 70px 0 70px 20px
+    &_title
+      font-weight: 600
+      font-size: 45px
+      line-height: 54px
+      color: #FFFFFF
+    &_text
+      display: block
+      font-weight: normal
+      font-size: 28px
+      line-height: 34px
+      color: #FFFFFF
+      margin-bottom: 40px
+    &_block
+      &_item
+        display: flex
+        align-items: flex-start
+        margin-bottom: 12px
+        &_text
+          font-weight: normal
+          font-size: 18px
+          line-height: 22px
+          color: #FFFFFF
+          margin-left: 10px
+
+.best
+  background: rgba(255, 255, 255, 0.6)
+  padding: 30px 0
+  &_container
+    max-width: 1200px
+    margin: auto
+  &_title
+    font-weight: normal
+    font-size: 38px
+    line-height: 62px
+    text-align: center
+    letter-spacing: 0.8px
+    color: #2B3042
+    margin: 0
+    margin-bottom: 10px
+  &_content
+    display: flex
+    align-items: center
+    justify-content: space-around
+    max-width: 700px
+    margin: auto
+    &_item
+      display: flex
+      align-items: center
+      flex-direction: column
+      &_icon
+        background: #FFB078
+        border-radius: 50%
+        width: 90px
+        height: 90px
+        display: flex
+        align-items: center
+        justify-content: center
+      &_text
+        font-weight: normal
+        font-size: 23px
+        line-height: 28px
+        text-align: center
+        color: #2B3042
+      &_jest
+        font-size: 50px
+        color: #2B3042
+
+.formuls
+  background: linear-gradient(180deg, #766881 0%, rgba(57, 66, 99, 0) 100%)
+  padding: 49px 0
+  &_container
+    margin: auto
+    max-width: 1200px
+  &_title
+    font-weight: 600
+    font-size: 35px
+    line-height: 150%
+    text-align: center
+    color: #FFFFFF
+    margin: 0
+    margin-bottom: 30px
+  &_content
+    display: flex
+    justify-content: space-between
+    padding: 30px
+    background: #FFFFFF
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3)
+    border-radius: 10px
+    &_item
+      display: flex
+      align-items: center
+      max-width: 331px
+      &_icon
+        margin-right: 23px
+      &_title
+        font-weight: 600
+        font-size: 25px
+        line-height: 150%
+        color: rgba(0, 0, 0, 0.7)
+        margin: 0
+      &_text
+        font-weight: 300
+        font-size: 16px
+        line-height: 150%
+        color: rgba(0, 0, 0, 0.7)
+  &_arrows
+    display: flex
+    align-items: center
+    justify-content: space-around
+    margin: 20px 0
+
+.tabs
+  &_container
+    margin: auto
+    max-width: 900px
+  &_btns
+    display: flex
+  &_title
+    font-weight: normal
+    font-size: 38px
+    line-height: 27px
+    text-align: center
+    color: #000000
+  &_text
+    font-weight: 250
+    font-size: 23px
+    line-height: 27px
+    text-align: center
+    color: #000000
+  &_btn-denkart
+    width: 50%
+    background: #FFB078
+    border-radius: 10px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 30px
+    &_title
+      font-weight: 600
+      font-size: 30px
+      line-height: 36px
+      color: #FFFFFF
+    &_text
+      font-weight: normal
+      font-size: 18px
+      line-height: 22px
+      text-align: center
+      color: #FFFFFF
+      margin-bottom: 20px
+    &_btn
+      padding: 18px 32px
+      background: #FFFFFF
+      border-radius: 4px
+      border: none
+      cursor: pointer
+      color: #FFB078
+      margin: 0 auto
+    &_btn:hover
+      background: #FFB078
+      color: #fff
+  &_btn-sam
+    margin-left: 30px
+    width: 50%
+    background: #fff
+    border-radius: 10px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 30px
+    &_title
+      font-weight: 600
+      font-size: 30px
+      line-height: 36px
+      color: #000
+    &_text
+      font-weight: normal
+      font-size: 18px
+      line-height: 22px
+      text-align: center
+      color: #000
+      margin-bottom: 20px
+    &_btn
+      padding: 18px 32px
+      background: #FFB078
+      border-radius: 4px
+      border: none
+      cursor: pointer
+      color: #fff
+      margin: 0 auto
+    &_btn:hover
+      background: #fff
+      color: #FFB078
+  &_tab
+    display: flex
+    flex-direction: column
+    &_item
+      display: flex
+      align-items: center
+      margin-bottom: 21px
+      &_icon
+        margin-right: 23px
+      &_title
+        font-weight: normal
+        font-size: 26px
+        line-height: 31px
+        color: #000000
+        margin: 0
+        margin-bottom: 12px
+      &_text
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #000000
+  &_items
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 33px
+
+.social
+  margin: 70px 0
+  &_container
+    max-width: 1200px
+    margin: auto
+  &_title
+    font-weight: 250
+    font-size: 35px
+    line-height: 42px
+    text-align: center
+    color: #000000
+    margin-bottom: 50px
+  &_content
+    display: flex
+    justify-content: center
+  &_link:not(:last-child)
+    margin-right: 30px
+  &_link
+    text-decoration: none
+
+.footer
+  background: #394263
+  padding: 44px 0
+  &_wrapper
+    display: flex
+    justify-content: space-between
+  &_container
+    margin: auto
+    max-width: 1200px
+  &_left
+    display: flex
+    flex-direction: column
+    justify-content: start
+    &_logo
+      height: 56px
+      margin-right: auto
+      margin-bottom: 10px
+    &_text
+      font-weight: 250
+      font-size: 16px
+      line-height: 150%
+      color: #FFFFFF
+      margin-bottom: 26px
+  &_link
+    &_text, &_a
+      font-weight: 250
+      font-size: 16px
+      line-height: 150%
+      color: #FFFFFF
+      text-decoration: none
+  &_social
+    display: flex
+    margin-bottom: 10px
+    &_link
+      display: flex
+      margin-right: 10px
+      text-decoration: none
+  &_right
+    display: flex
+    &_item
+      display: flex
+      flex-direction: column
+    &_item:not(last-child)
+      margin-right: 50px
+    &_title
+      font-weight: normal
+      font-size: 20px
+      line-height: 150%
+      color: #FFFFFF
+      margin-bottom: 17px
+    &_link
+      font-weight: 250
+      font-size: 20px
+      line-height: 150%
+      color: #FFFFFF
+      text-decoration: none
+      margin-bottom: 5px
+  &_bottom
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-top: 34px
+    &_text
+      font-weight: normal
+      font-size: 16px
+      line-height: 150%
+      color: #8F91D0
+      margin: 0
