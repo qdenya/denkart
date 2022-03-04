@@ -1,0 +1,258 @@
+body
+  font-family: "Museo Sans"
+
+.bx-livechat-copyright, .b24-form-sign
+  display: none !important
+
+.header
+  //background: #394263
+  background: linear-gradient(to right, #FFF 50%, #394263 50%)
+  &_container
+    max-width: 1200px
+    margin: auto
+  &_wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    background: #394263
+  &_logo
+    background: #fff
+    &_img
+      height: 80px
+  &_menu
+    flex: 1 1 auto
+    justify-content: space-around
+    display: flex
+    padding: 0 40px 0 40px
+    &_link
+      font-weight: normal
+      font-size: 18px
+      line-height: 150%
+      color: #FFFFFF
+      text-decoration: none
+  &_contact
+    display: flex
+    flex-direction: column
+    align-items: end
+    &_phone
+      font-weight: normal
+      font-size: 18px
+      line-height: 150%
+      color: #FFFFFF
+      text-decoration: none
+    &_mail
+      font-weight: 300
+      font-size: 14px
+      line-height: 150%
+      color: #FFFFFF
+      text-decoration: none
+  &_social
+    display: flex
+    &_link
+      display: flex
+      margin-left: 10px
+      text-decoration: none
+      &_img
+        height: 25px
+
+.main
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(57, 66, 99, 0.12) 100%)
+  padding: 50px 0 110px
+  &_container
+    margin: auto
+    max-width: 1200px
+    padding: 0 10px
+  &_top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &_title
+      font-weight: 600
+      font-size: 60px
+      line-height: 72px
+      color: #394263
+    &_text
+      color: #FFB078
+  &_bottom
+    &_title
+      font-weight: 300
+      font-size: 25px
+      line-height: 30px
+      color: #000000
+    &_color
+      background: #FFB078
+    &_text
+      font-weight: 300
+      font-size: 20px
+      line-height: 24px
+      color: #000000
+
+.whatme
+  padding: 110px 0
+  background: url(../img/about/back.svg)
+  background-size: cover
+  background-position: center
+  &_container
+    max-width: 1200px
+    margin: auto
+    padding: 0 10px
+  &_top
+    display: flex
+    justify-content: space-between
+    &_text
+      font-weight: 300
+      font-size: 25px
+      line-height: 30px
+      max-width: 600px
+      color: #000000
+  &_item
+    margin-bottom: 70px
+    &_title
+      font-weight: normal
+      font-size: 25px
+      line-height: 30px
+      color: #000000
+      margin-bottom: 35px
+    &_orange
+      background: #FFB078
+    &_pink
+      background: #9799CE
+    &_text
+      font-weight: 300
+      font-size: 20px
+      line-height: 24px
+      color: #000000
+
+.director
+  padding: 50px 0
+  background: rgba(57, 66, 99, 0.05)
+  &_container
+    max-width: 1200px
+    margin: auto
+    padding: 0 10px
+  &_wrapper
+    display: flex
+    justify-content: space-between
+  &_photo
+    margin-right: 30px
+  &_texts
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+  &_say
+    font-weight: 300
+    font-size: 25px
+    line-height: 30px
+    color: #000000
+    margin: 0
+  &_name
+    font-size: 30px
+    line-height: 36px
+    color: #000000
+    margin: 0
+  &_text
+    font-weight: 300
+    font-size: 18px
+    line-height: 22px
+    color: #000000
+    margin: 0
+
+.footer
+  background: #394263
+  padding: 30px 0 10px
+  &_container
+    max-width: 1200px
+    margin: auto
+    padding: 10px 0
+  &_wrapper
+    display: flex
+    justify-content: space-between
+  &_left
+    display: flex
+    flex-direction: column
+    &_logo
+      height: 35px
+      margin-right: auto
+      margin-bottom: 10px
+    &_text
+      font-weight: 250
+      font-size: 16px
+      line-height: 150%
+      color: #FFFFFF
+      margin-bottom: 20px
+  &_right
+    display: flex
+    width: 45%
+    justify-content: space-between
+    &_item
+      display: flex
+      flex-direction: column
+
+    &_title
+      font-weight: normal
+      font-size: 20px
+      line-height: 150%
+      color: #FFFFFF
+      margin-bottom: 15px
+    &_link
+      margin-bottom: 5px
+      font-weight: 250
+      font-size: 16px
+      line-height: 150%
+      color: #FFFFFF
+      text-decoration: none
+  &_social
+    &_link
+      text-decoration: none
+      margin-right: 10px
+      &_img
+        height: 25px
+  &_link
+    &_text, &_a
+      font-weight: 250
+      font-size: 16px
+      line-height: 150%
+      color: #FFFFFF
+    &_a
+      text-decoration: none
+  &_bottom
+    display: flex
+    align-items: center
+    flex-direction: column
+    margin-top: 30px
+    &_img
+      height: 30px
+    &_text
+      margin: 0
+      font-weight: normal
+      font-size: 14px
+      line-height: 150%
+      color: #8F91D0
+
+@media (max-width: 850px)
+  .main
+    &_top
+      flex-direction: column
+      &_title
+        text-align: center
+        font-size: 45px
+        line-height: inherit
+
+  .whatme
+    padding: 30px 0 !important
+    &_top
+      flex-direction: column
+      &_right
+        &_photo
+          display: flex
+          justify-content: center
+
+  .director
+    padding: 0 !important
+    &_wrapper
+      flex-direction: column
+      align-items: center
+    &_say, &_text, &_name
+      text-align: center
+    &_say
+      margin: 20px 0
