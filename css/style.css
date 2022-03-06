@@ -12,7 +12,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-position: center;
+  background-position: bottom;
 }
 
 .main_content {
