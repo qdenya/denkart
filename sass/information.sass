@@ -1,0 +1,351 @@
+.information
+  &_title
+    font-weight: normal
+    font-size: 25px
+    line-height: 30px
+    text-align: center
+    color: #000000
+    margin: 29px 0 33px
+  &_container
+    max-width: 1000px
+    margin: auto
+    padding: 0 10px
+  &_content
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin-bottom: 47px
+    &_item
+      padding: 18px 32px
+      background: #FFB078
+      text-decoration: none
+      border-radius: 10px
+      margin-right: 23px
+      color: #000
+      margin-bottom: 17px
+  &_photo
+    background-blend-mode: multiply
+    background-image: url(../img/information/back.jpg)
+    background-position: top
+    background-repeat: no-repeat
+    background-size: cover
+
+    background-color: rgba(57, 66, 99, 0.75)
+    &_wrapper
+      padding-top: 49px
+      padding-bottom: 25px
+    &_container
+      margin: auto
+      max-width: 1200px
+      padding: 0 10px
+    &_title
+      font-weight: 600
+      font-size: 40px
+      margin: 0
+      text-align: center
+      color: #FFFFFF
+    &_content
+      &_title
+        margin: 25px 0
+        font-size: 25px
+        text-align: center
+        letter-spacing: 0.8px
+        color: #FFFFFF
+    &_divs
+      display: flex
+      justify-content: center
+    &_item:not(:last-child)
+      margin-right: 80px
+
+    &_item
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      &_circle
+        background: #FFB078
+        border-radius: 50%
+        width: 80px
+        height: 80px
+        display: flex
+        align-items: center
+        justify-content: center
+        &_icon
+          height: 35px
+      &_text
+        font-weight: normal
+        font-size: 23px
+        line-height: 28px
+        text-align: center
+        color: #FFFFFF
+
+.main
+  &_orange
+    background: #FFB078
+  &_container
+    max-width: 1200px
+    margin: auto
+    padding: 0 10px
+  &_wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+  &_title
+    font-weight: normal
+    font-size: 30px
+    line-height: 42px
+    text-align: center
+    color: #000000
+  &_text
+    font-weight: normal
+    font-size: 22px
+    line-height: 30px
+    color: #000000
+    &_center
+      font-weight: normal
+      font-size: 25px
+      line-height: 30px
+      color: #000000
+      text-align: center
+      margin-top: 50px
+    &_price
+      font-weight: normal
+      font-size: 45px
+      line-height: 54px
+      text-align: center
+      color: #000000
+      background: #FFB078
+      padding: 15px 30px
+      margin: 0 auto
+      &_decr
+        font-weight: normal
+        font-size: 25px
+        line-height: 30px
+        text-align: center
+        color: #000000
+    &_2
+      font-weight: 300
+      font-size: 18px
+      line-height: 22px
+      color: #000000
+      margin-top: 50px
+  &_content
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 55px
+    &_item
+      display: flex
+      margin-bottom: 25px
+      &_icon
+        margin-right: 10px
+        &_img
+          height: 25px
+          padding-top: 3px
+      &_info
+        display: flex
+        flex-direction: column
+        &_title
+          font-weight: normal
+          font-size: 25px
+          line-height: 30px
+          color: #000000
+          margin: 0
+        &_text
+          font-weight: 300
+          font-size: 18px
+          line-height: 22px
+          color: #000000
+          max-width: 900px
+
+.tabs
+  &_container
+    margin: auto
+    max-width: 900px
+  &_btns
+    display: flex
+  &_title
+    font-weight: normal
+    font-size: 30px
+    text-align: center
+    color: #000000
+  &_text
+    font-weight: 250
+    font-size: 18px
+    text-align: center
+    color: #000000
+  &_btn-denkart
+    width: 50%
+    background: #FFB078
+    border-radius: 10px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &_title
+      font-weight: 600
+      font-size: 25px
+      color: #FFFFFF
+    &_text
+      font-weight: normal
+      font-size: 15px
+      text-align: center
+      color: #FFFFFF
+      margin-bottom: 20px
+    &_btn
+      padding: 18px 32px
+      background: #FFFFFF
+      border-radius: 4px
+      border: none
+      cursor: pointer
+      color: #FFB078
+      margin: 0 auto
+    &_btn:hover
+      background: #FFB078
+      color: #fff
+  &_btn-sam
+    margin-left: 30px
+    width: 50%
+    background: #fff
+    border-radius: 10px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 20px
+    &_title
+      font-weight: 600
+      font-size: 25px
+      color: #000
+    &_text
+      font-weight: normal
+      font-size: 15px
+      text-align: center
+      color: #000
+      margin-bottom: 20px
+    &_btn
+      padding: 18px 32px
+      background: #FFB078
+      border-radius: 4px
+      border: none
+      cursor: pointer
+      color: #fff
+      margin: 0 auto
+    &_btn:hover
+      background: #fff
+      color: #FFB078
+  &_tab
+    display: flex
+    flex-direction: column
+    &_item
+      display: flex
+      align-items: center
+      margin-bottom: 21px
+      &_icon
+        margin-right: 18px
+        height: 30px
+      &_title
+        font-weight: normal
+        font-size: 22px
+        color: #000000
+        margin: 0
+        margin-bottom: 6px
+      &_text
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #000000
+  &_items
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 33px
+
+#f2f2f2
+
+.forward
+  background: #766881
+  position: relative
+  margin: 50px 0
+  // background: url(../img/information/back_for.svg)
+  // background-position: center
+  // background-size: cover
+  // background-repeat: no-repeat
+  &_container
+    max-width: 1200px
+    margin: auto
+    padding: 0 10px
+  &_wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 50px
+  &_form
+    display: flex
+    flex-direction: column
+    align-items: start
+    &_input
+      padding: 12px 47px 12px 15px
+      font-size: 15px
+      line-height: 18px
+      background: transparent
+      border: 1px solid #D1D1D1
+      border-radius: 4px
+      min-width: 230px
+      margin-bottom: 15px
+    &_input[placeholder]
+      color: #F2F2F2 !important
+    &_btn
+      background: #FFB078
+      border-radius: 4px
+      color: #000
+      padding: 18px 32px
+      border: none
+      margin: 0 auto 0 0
+  &_title
+    font-weight: 600
+    font-size: 25px
+    color: #FFFFFF
+    margin-bottom: 10px
+  &_alena
+    position: absolute
+    bottom: -5px
+    right: 150px
+    &_img
+      height: 400px
+
+.swiper
+  &_wrapper
+    background: #FFFFFF
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25)
+    border-radius: 20px
+    overflow: hidden
+  &_container
+    margin: auto
+    max-width: 1200px
+    padding: 0 10px
+  &_slide
+    display: flex
+    &_texts
+      padding: 30px 20px 30px 15px
+    &_title
+      font-weight: normal
+      font-size: 25px
+      line-height: 30px
+      color: #000000
+      margin-bottom: 30px
+    &_text
+      font-weight: 300
+      font-size: 20px
+      line-height: 24px
+      color: #000000
+
+.video
+  margin: 30px 0
+  &_container
+    max-width: 1000px
+    margin: auto
+    padding: 0 10px
+  &_wrapper
+    height: 500px
+    background: #fff

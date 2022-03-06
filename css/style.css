@@ -5,11 +5,6 @@ body {
   background-size: cover;
 }
 
-.main_container {
-  max-width: 1200px;
-  margin: auto;
-}
-
 .main_wrapper {
   background: url(../img/main.jpg);
   background-size: cover;
@@ -73,13 +68,11 @@ body {
 
 .best_title {
   font-weight: normal;
-  font-size: 38px;
-  line-height: 62px;
+  font-size: 30px;
   text-align: center;
-  letter-spacing: 0.8px;
   color: #2B3042;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .best_content {
@@ -108,11 +101,15 @@ body {
           flex-direction: column;
 }
 
+.best_content_item_img {
+  height: 35px;
+}
+
 .best_content_item_icon {
   background: #FFB078;
   border-radius: 50%;
-  width: 90px;
-  height: 90px;
+  width: 75px;
+  height: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,10 +123,10 @@ body {
 
 .best_content_item_text {
   font-weight: normal;
-  font-size: 23px;
-  line-height: 28px;
+  font-size: 20px;
   text-align: center;
   color: #2B3042;
+  margin-top: 5px;
 }
 
 .best_content_item_jest {
@@ -150,8 +147,7 @@ body {
 
 .formuls_title {
   font-weight: 600;
-  font-size: 35px;
-  line-height: 150%;
+  font-size: 30px;
   text-align: center;
   color: #FFFFFF;
   margin: 0;
@@ -188,8 +184,7 @@ body {
 
 .formuls_content_item_title {
   font-weight: 600;
-  font-size: 25px;
-  line-height: 150%;
+  font-size: 20px;
   color: rgba(0, 0, 0, 0.7);
   margin: 0;
 }
@@ -226,16 +221,14 @@ body {
 
 .tabs_title {
   font-weight: normal;
-  font-size: 38px;
-  line-height: 27px;
+  font-size: 30px;
   text-align: center;
   color: #000000;
 }
 
 .tabs_text {
   font-weight: 250;
-  font-size: 23px;
-  line-height: 27px;
+  font-size: 18px;
   text-align: center;
   color: #000000;
 }
@@ -257,20 +250,17 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px;
 }
 
 .tabs_btn-denkart_title {
   font-weight: 600;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 25px;
   color: #FFFFFF;
 }
 
 .tabs_btn-denkart_text {
   font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 15px;
   text-align: center;
   color: #FFFFFF;
   margin-bottom: 20px;
@@ -309,20 +299,18 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px;
+  padding: 20px;
 }
 
 .tabs_btn-sam_title {
   font-weight: 600;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 25px;
   color: #000;
 }
 
 .tabs_btn-sam_text {
   font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 15px;
   text-align: center;
   color: #000;
   margin-bottom: 20px;
@@ -364,16 +352,16 @@ body {
 }
 
 .tabs_tab_item_icon {
-  margin-right: 23px;
+  margin-right: 18px;
+  height: 30px;
 }
 
 .tabs_tab_item_title {
   font-weight: normal;
-  font-size: 26px;
-  line-height: 31px;
+  font-size: 22px;
   color: #000000;
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
 }
 
 .tabs_tab_item_text {
@@ -407,8 +395,7 @@ body {
 
 .social_title {
   font-weight: 250;
-  font-size: 35px;
-  line-height: 42px;
+  font-size: 30px;
   text-align: center;
   color: #000000;
   margin-bottom: 50px;

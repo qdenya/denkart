@@ -1,25 +1,56 @@
+body
+  font-family: "Museo Sans"
+  background: #F2F2F2
+
+.bx-livechat-copyright, .b24-form-sign
+  display: none !important
+
+.no-scroll
+  overflow-y: hidden
+
+::placeholder
+  color: #f2f2f2
+
 .header
-  //background: #394263
-  background: linear-gradient(to right, #F2F2F2 10%, #394263 30%)
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25)
+  background: linear-gradient(to right, #FFF 50%, #394263 50%)
   &_container
     max-width: 1200px
     margin: auto
+    padding: 0 10px
   &_wrapper
     display: flex
     align-items: center
     justify-content: space-between
+    background: #394263
   &_logo
-    background: #F2F2F2
+    background: #fff
     &_img
       height: 80px
   &_menu
     flex: 1 1 auto
-    justify-content: space-between
+    justify-content: space-around
     display: flex
     padding: 0 40px 0 40px
     &_link
       font-weight: normal
       font-size: 18px
+      line-height: 150%
+      color: #FFFFFF
+      text-decoration: none
+  &_contact
+    display: flex
+    flex-direction: column
+    align-items: end
+    &_phone
+      font-weight: normal
+      font-size: 18px
+      line-height: 150%
+      color: #FFFFFF
+      text-decoration: none
+    &_mail
+      font-weight: 300
+      font-size: 14px
       line-height: 150%
       color: #FFFFFF
       text-decoration: none
@@ -29,3 +60,129 @@
       display: flex
       margin-left: 10px
       text-decoration: none
+      &_img
+        height: 25px
+
+.header
+  &_mobile
+    z-index: 10
+    height: 100%
+    width: 260px
+    position: fixed
+    z-index: 1
+    top: 0
+    right: 0
+    background-color: #F2F2F2
+    overflow-x: hidden
+    padding: 20px 28px
+    transform: translateX(100%)
+    transition: 0.5s
+    overflow-y: auto
+    &_open
+      display: none
+      width: 25px
+      height: 25px
+      background: url(../img/header/hamburg.svg)
+      background-position: center
+      background-repeat: no-repeat
+      background-size: contain
+      cursor: pointer
+    &_active
+      transform: translateX(0%)
+    &_close
+      width: 35px
+      height: 35px
+      background: url(../img/header/close.svg)
+      background-position: center
+      background-repeat: no-repeat
+      background-size: contain
+      top: 0
+      right: 0
+      cursor: pointer
+      margin-bottom: 20px
+    &_social
+      display: flex
+      margin-top: 20px
+      &_item
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-right: 10px
+        &_img
+          width: 30px
+    &_back
+      display: none
+      position: fixed
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      bottom: 0
+      background: rgba(0, 0, 0, 0.48)
+      &_active
+        display: block
+    &_contacts
+      margin-top: 30px
+      &_link
+        display: flex
+        flex-direction: column
+        margin-bottom: 10px
+        &_text
+          color: #394263
+          margin-bottom: 4px
+        &_a
+          color: #394263
+          text-decoration: none
+
+.sidenav a, .dropdown-btn
+  font-weight: 700
+  padding: 15px 0px
+  text-decoration: none
+  font-size: 17px
+  color: #394263
+  display: block
+  border: none
+  background: none
+  width: 100%
+  text-align: left
+  cursor: pointer
+  outline: none
+  text-transform: uppercase
+  border-bottom: 1px solid #00000050
+.sidenav a:hover, .dropdown-btn:hover
+  color: #606fa3
+
+.actives
+  color: #4e5b8a
+
+.dropdown-container
+  display: none
+  padding-left: 15px
+
+.dropdown-container a
+  font-size: 15px
+  font-weight: 500
+  padding: 5px 0
+  border-bottom: none
+
+.fa-caret-down
+  float: right
+  padding-right: 8px
+
+@media (max-width: 988px)
+  .header
+
+    background: #fff
+    &_wrapper
+      background: #fff
+    &_menu
+      display: none
+    &_contact
+      display: none
+    &_mobile
+      &_open
+        display: flex
+
+  .footer
+    &_wrapper, &_right
+      flex-direction: column
