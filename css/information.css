@@ -584,6 +584,10 @@ body {
   background: #fff;
 }
 
+.timetable {
+  margin: 65px 0;
+}
+
 .timetable_title {
   font-weight: normal;
   font-size: 25px;
@@ -733,7 +737,7 @@ body {
 }
 
 .social {
-  margin: 70px 0;
+  margin: 100px 0;
 }
 
 .social_container {
@@ -768,6 +772,10 @@ body {
 
 .social_link_img {
   height: 50px;
+}
+
+.questions {
+  margin-bottom: 50px;
 }
 
 .questions_title {
@@ -879,17 +887,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   margin-bottom: 10px;
   max-width: 700px;
 }
 
 .important_content_left_item_icon {
-  margin-right: 4px;
+  margin-top: 5px;
+  margin-right: 8px;
   min-width: 15px;
-  height: 15px;
+  height: 14px;
   background: #FFB078;
   border-radius: 50%;
 }

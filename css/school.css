@@ -478,6 +478,7 @@ body {
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
   padding: 10px 20px;
+  min-width: 265px;
 }
 
 .studium_type_item_descr {
@@ -553,7 +554,7 @@ body {
   font-size: 30px;
   text-align: center;
   color: #000000;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .studium_text {
@@ -566,7 +567,7 @@ body {
 .forward {
   background: #766881;
   position: relative;
-  margin: 130px 0 50px;
+  margin: 150px 0 50px;
 }
 
 .forward_container {
@@ -645,6 +646,10 @@ body {
 
 .forward_alena_img {
   height: 400px;
+}
+
+.forward_contact {
+  margin: 100px 0 0 !important;
 }
 
 .bonus_container {
