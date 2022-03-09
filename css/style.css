@@ -24,16 +24,14 @@ body {
 
 .main_content_title {
   font-weight: 600;
-  font-size: 45px;
-  line-height: 54px;
+  font-size: calc(18px + 27 * (100vw / 1280));
   color: #FFFFFF;
 }
 
 .main_content_text {
   display: block;
   font-weight: normal;
-  font-size: 28px;
-  line-height: 34px;
+  font-size: calc(16px + 12 * (100vw / 1280));
   color: #FFFFFF;
   margin-bottom: 40px;
 }
@@ -50,8 +48,7 @@ body {
 
 .main_content_block_item_text {
   font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: calc(14px + 4 * (100vw / 1280));
   color: #FFFFFF;
   margin-left: 10px;
 }
