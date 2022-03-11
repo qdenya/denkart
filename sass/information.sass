@@ -46,14 +46,14 @@ body
       padding: 0 10px
     &_title
       font-weight: 600
-      font-size: 40px
+      font-size: calc(18px + 22 * (100vw / 1280))
       margin: 0
       text-align: center
       color: #FFFFFF
     &_content
       &_title
         margin: 25px 0
-        font-size: 25px
+        font-size: calc(15px + 10 * (100vw / 1280))
         text-align: center
         letter-spacing: 0.8px
         color: #FFFFFF
@@ -99,25 +99,23 @@ body
     justify-content: center
   &_title
     font-weight: normal
-    font-size: 30px
+    font-size: calc(18px + 12 * (100vw / 1280))
     text-align: center
     color: #000000
   &_text
     font-weight: normal
-    font-size: 18px
+    font-size: calc(15px + 3 * (100vw / 1280))
     text-align: center
     color: #000000
     &_center
       font-weight: normal
-      font-size: 25px
-      line-height: 30px
+      font-size: calc(18px + 7 * (100vw / 1280))
       color: #000000
       text-align: center
       margin-top: 50px
     &_price
       font-weight: normal
-      font-size: 45px
-      line-height: 54px
+      font-size: calc(22px + 23 * (100vw / 1280))
       text-align: center
       color: #000000
       background: #FFB078
@@ -125,8 +123,7 @@ body
       margin: 0 auto
       &_decr
         font-weight: normal
-        font-size: 25px
-        line-height: 30px
+        font-size: calc(18px + 7 * (100vw / 1280))
         text-align: center
         color: #000000
     &_2
@@ -154,13 +151,13 @@ body
         flex-direction: column
         &_title
           font-weight: normal
-          font-size: 22px
+          font-size: calc(18px + 4 * (100vw / 1280))
           color: #000000
           margin: 0
           margin-bottom: 10px
         &_text
           font-weight: 300
-          font-size: 18px
+          font-size: calc(15px + 3 * (100vw / 1280))
           color: #000000
           max-width: 900px
 
@@ -168,6 +165,7 @@ body
   &_container
     margin: auto
     max-width: 900px
+    padding: 0 10px
   &_btns
     display: flex
   &_title
@@ -188,6 +186,7 @@ body
     flex-direction: column
     align-items: center
     justify-content: center
+    padding: 10px
     &_title
       font-weight: 600
       font-size: 25px
@@ -212,30 +211,30 @@ body
   &_btn-sam
     margin-left: 30px
     width: 50%
-    background: #fff
+    background: #766881
     border-radius: 10px
     display: flex
     flex-direction: column
     align-items: center
-    justify-content: center
-    padding: 20px
+    justify-content: space-between
+    padding: 10px
     &_title
       font-weight: 600
       font-size: 25px
-      color: #000
+      color: #fff
     &_text
       font-weight: normal
       font-size: 15px
       text-align: center
-      color: #000
+      color: #fff
       margin-bottom: 20px
     &_btn
       padding: 18px 32px
-      background: #FFB078
+      background: #fff
       border-radius: 4px
       border: none
       cursor: pointer
-      color: #fff
+      color: #766881
       margin: 0 auto
     &_btn:hover
       background: #fff
@@ -270,7 +269,7 @@ body
 .forward
   background: #766881
   position: relative
-  margin: 50px 0
+  margin: 150px 0 50px
   // background: url(../img/information/back_for.svg)
   // background-position: center
   // background-size: cover
@@ -281,8 +280,7 @@ body
     padding: 0 10px
   &_wrapper
     display: flex
-    justify-content: space-between
-    align-items: center
+    flex-direction: column
     padding: 50px
   &_form
     display: flex
@@ -308,16 +306,22 @@ body
       margin: 0 auto 0 0
   &_title
     font-weight: 600
-    font-size: 25px
+    font-size: calc(18px + 7 * (100vw / 1280))
+    color: #FFFFFF
+    margin-bottom: 10px
+  &_text
+    font-weight: normal
+    font-size: 18px
     color: #FFFFFF
     margin-bottom: 10px
   &_alena
     position: absolute
     bottom: -5px
-    right: 150px
+    right: calc(5 * (100vw / 1280))
     &_img
       height: 400px
-
+  &_contact
+    margin: 100px 0 0 !important
 .swiper
   &_wrapper
     background: #FFFFFF
@@ -326,14 +330,17 @@ body
     overflow: hidden
   &_container
     margin: auto
-    max-width: 1200px
+    max-width: 1070px
     padding: 0 10px
   &_slide
     display: flex
     &_photo
-      display: flex
-      &_img
-        height: 300px
+      background: url(../img/information/swiper/1.jpg)
+      background-size: cover
+      background-position: center
+      width: 100%
+      min-width: 300px
+
     &_texts
       padding: 30px 20px 30px 15px
     &_title
@@ -355,8 +362,18 @@ body
     margin: auto
     padding: 0 10px
   &_wrapper
-    height: 500px
     background: #fff
+    position: relative
+    padding-bottom: 56.25%
+    padding-top: 30px
+    height: 0
+    overflow: hidden
+  &_wrapper iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
 
 .timetable
   margin: 65px 0
@@ -460,9 +477,10 @@ body
   &_container
     max-width: 1200px
     margin: auto
+    padding: 0 10px
   &_title
     font-weight: 250
-    font-size: 30px
+    font-size: calc(18px + 12 * (100vw / 1280))
     text-align: center
     color: #000000
     margin-bottom: 20px
@@ -480,7 +498,7 @@ body
   margin-bottom: 50px
   &_title
     font-weight: normal
-    font-size: 30px
+    font-size: calc(18px + 12 * (100vw / 1280))
     text-align: center
     color: #000000
 
@@ -532,10 +550,11 @@ body
     padding: 0 10px
   &_title
     font-weight: normal
-    font-size: 35px
-    line-height: 42px
+    font-size: calc(18px + 12 * (100vw / 1280))
     text-align: center
     color: #000000
+  &_text
+    font-size: calc(15px + 3 * (100vw / 1280))
   &_content
     display: flex
     align-items: end
@@ -555,3 +574,58 @@ body
           height: 14px
           background: #FFB078
           border-radius: 50%
+
+@media (max-width: 915px)
+  .swiper
+    &_slide
+      &_texts
+        padding: 0px 20px
+      &_photo_img
+        height: 250px
+
+@media (max-width: 810px)
+  .swiper
+    &_slide
+      &_photo_img
+        height: 200px
+
+@media (max-width: 800px)
+  .forward
+    margin-top: 50px
+    &_form
+      align-items: center
+      &_btn
+        margin: 0 auto
+    &_alena
+      display: none
+    &_title, &_text
+      text-align: center
+
+@media (max-width: 798px)
+  .important
+    &_content
+      flex-direction: column
+      align-items: center
+
+@media (max-width: 677px)
+  .swiper
+    &_slide
+      flex-direction: column
+      &_photo
+        height: 200px
+
+@media (max-width: 495px)
+  .information
+    &_content
+      flex-direction: column
+      &_item
+        text-align: center
+        margin-right: 0
+    &_photo
+      &_item:not(:last-child)
+        margin-right: 20px
+      &_item
+        &_text
+          font-size: 18px
+  .tabs_btn-sam
+    margin-left: 10px
