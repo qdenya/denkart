@@ -436,3 +436,9 @@ body {
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 495px) {
+  .tabs_btn-sam {
+    margin-left: 5px;
+  }
+}
