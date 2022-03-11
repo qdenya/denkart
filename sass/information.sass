@@ -445,33 +445,60 @@ body
     line-height: 22px
     color: #000000
 
-.university
+.univers
   &_container
-    max-width: 1200px
     margin: auto
+    max-width: 1200px
     padding: 0 10px
   &_wrapper
     display: flex
-    flex-direction: column
-    flex-wrap: wrap
-    height: 300px
+    flex-flow: column wrap
+    justify-content: space-between
+    height: 430px
+  &_item:nth-child(1)
+    flex-basis: 100%
+  &_item:hover
+    box-shadow: 0px 0px 10px #394263
+    transition: 0.2s
   &_item
-    &_first
-      background-repeat: no-repeat
+    &_1
+      background: url(../img/information/university/1.jpg)
+    &_2
+      background: url(../img/information/university/2.jpg)
+    &_3
+      background: url(../img/information/university/3.jpg)
+    &_4
+      background: url(../img/information/university/4.jpg)
+    &_5
+      background: url(../img/information/university/5.jpg)
+  &_item
+    height: 180px
+    margin: 10px
+    padding: 5px
+    width: calc(90% / 3)
+    border-radius: 20px
+    transition: 0.2s
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-end
+    background-size: cover
+    background-position: center
+    &_title
+      display: flex
+      align-items: center
+      margin-bottom: 10px
+    &_name
+      font-weight: normal
+      font-size: 28px
+      color: #FFFFFF
+      margin: 0
+    &_icon
+      background: url(../img/information/mark-un.svg)
+      width: 30px
+      height: 30px
       background-size: cover
-      &_1
-        background: url(../img/information/university/1.jpg)
-      &_2
-        background: url(../img/information/university/2.jpg)
-      &_3
-        background: url(../img/information/university/3.jpg)
-      &_4
-        background: url(../img/information/university/4.jpg)
-      &_5
-        background: url(../img/information/university/5.jpg)
-    &_first
-      background-repeat: no-repeat
-      background-size: cover
+      margin-left: 10px
 
 .social
   margin: 100px 0
@@ -630,3 +657,12 @@ body
           font-size: 18px
   .tabs_btn-sam
     margin-left: 5px
+
+@media (max-width: 740px)
+  .univers
+    &_wrapper
+      height: auto
+    &_item
+      width: 95%
+    &_item:nth-child(1)
+      flex-basis: auto

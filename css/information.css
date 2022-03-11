@@ -705,13 +705,66 @@ body {
   color: #000000;
 }
 
-.university_container {
-  max-width: 1200px;
+.univers_container {
   margin: auto;
+  max-width: 1200px;
   padding: 0 10px;
 }
 
-.university_wrapper {
+.univers_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 430px;
+}
+
+.univers_item:nth-child(1) {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.univers_item:hover {
+  -webkit-box-shadow: 0px 0px 10px #394263;
+          box-shadow: 0px 0px 10px #394263;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.univers_item_1 {
+  background: url(../img/information/university/1.jpg);
+}
+
+.univers_item_2 {
+  background: url(../img/information/university/2.jpg);
+}
+
+.univers_item_3 {
+  background: url(../img/information/university/3.jpg);
+}
+
+.univers_item_4 {
+  background: url(../img/information/university/4.jpg);
+}
+
+.univers_item_5 {
+  background: url(../img/information/university/5.jpg);
+}
+
+.univers_item {
+  height: 180px;
+  margin: 10px;
+  padding: 5px;
+  width: calc(90% / 3);
+  border-radius: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -719,39 +772,39 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 300px;
-}
-
-.university_item_first {
-  background-repeat: no-repeat;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   background-size: cover;
+  background-position: center;
 }
 
-.university_item_first_1 {
-  background: url(../img/information/university/1.jpg);
+.univers_item_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
 }
 
-.university_item_first_2 {
-  background: url(../img/information/university/2.jpg);
+.univers_item_name {
+  font-weight: normal;
+  font-size: 28px;
+  color: #FFFFFF;
+  margin: 0;
 }
 
-.university_item_first_3 {
-  background: url(../img/information/university/3.jpg);
-}
-
-.university_item_first_4 {
-  background: url(../img/information/university/4.jpg);
-}
-
-.university_item_first_5 {
-  background: url(../img/information/university/5.jpg);
-}
-
-.university_item_first {
-  background-repeat: no-repeat;
+.univers_item_icon {
+  background: url(../img/information/mark-un.svg);
+  width: 30px;
+  height: 30px;
   background-size: cover;
+  margin-left: 10px;
 }
 
 .social {
@@ -1002,6 +1055,19 @@ body {
     font-size: 18px;
   }
   .tabs_btn-sam {
-    margin-left: 10px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 740px) {
+  .univers_wrapper {
+    height: auto;
+  }
+  .univers_item {
+    width: 95%;
+  }
+  .univers_item:nth-child(1) {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
 }
