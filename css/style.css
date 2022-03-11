@@ -64,7 +64,7 @@ body {
 
 .best_title {
   font-weight: normal;
-  font-size: 30px;
+  font-size: calc(18px + 12 * (100vw / 1280));
   text-align: center;
   color: #2B3042;
   margin: 0;
@@ -119,7 +119,7 @@ body {
 
 .best_content_item_text {
   font-weight: normal;
-  font-size: 20px;
+  font-size: calc(15px + 5 * (100vw / 1280));
   text-align: center;
   color: #2B3042;
   margin-top: 5px;
@@ -139,11 +139,12 @@ body {
 .formuls_container {
   margin: auto;
   max-width: 1200px;
+  padding: 0 10px;
 }
 
 .formuls_title {
   font-weight: 600;
-  font-size: 30px;
+  font-size: calc(18px + 12 * (100vw / 1280));
   text-align: center;
   color: #FFFFFF;
   margin: 0;
@@ -207,6 +208,7 @@ body {
 .tabs_container {
   margin: auto;
   max-width: 900px;
+  padding: 0 10px;
 }
 
 .tabs_btns {
@@ -246,6 +248,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 10px;
 }
 
 .tabs_btn-denkart_title {
@@ -280,7 +283,7 @@ body {
 .tabs_btn-sam {
   margin-left: 30px;
   width: 50%;
-  background: #fff;
+  background: #766881;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,33 +295,33 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
 }
 
 .tabs_btn-sam_title {
   font-weight: 600;
   font-size: 25px;
-  color: #000;
+  color: #fff;
 }
 
 .tabs_btn-sam_text {
   font-weight: normal;
   font-size: 15px;
   text-align: center;
-  color: #000;
+  color: #fff;
   margin-bottom: 20px;
 }
 
 .tabs_btn-sam_btn {
   padding: 18px 32px;
-  background: #FFB078;
+  background: #fff;
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  color: #fff;
+  color: #766881;
   margin: 0 auto;
 }
 
@@ -381,17 +384,18 @@ body {
 }
 
 .social {
-  margin: 70px 0;
+  margin: 100px 0;
 }
 
 .social_container {
   max-width: 1200px;
   margin: auto;
+  padding: 0 10px;
 }
 
 .social_title {
   font-weight: 250;
-  font-size: 30px;
+  font-size: calc(18px + 12 * (100vw / 1280));
   text-align: center;
   color: #000000;
   margin-bottom: 20px;
@@ -416,4 +420,19 @@ body {
 
 .social_link_img {
   height: 50px;
+}
+
+@media (max-width: 900px) {
+  .formuls_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .formuls_content_item:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }

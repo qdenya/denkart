@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="museo/museo.css">
 </head>
 <body>
+  <section class="header_mobile_back"></section>
   <header class="header">
     <div class="header_container">
       <div class="header_wrapper">
@@ -322,13 +323,35 @@
           </div>
         </div>
         <div class="footer_right">
+          <div class="footer_mobile">
+            <button class="footer_dropdown-btn">Меню
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="footer_dropdown-container">
+              <a href="#">Образование за рубежом</a>
+              <a href="#">Языковая школа</a>
+              <a href="#">Подготовка к поступлению</a>
+              <a href="#">Дополнительные услуги</a>
+              <a href="#">О нас</a>
+            </div>
+            <button class="footer_dropdown-btn">Меню 2
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="footer_dropdown-container">
+              <a href="#">Образование за рубежом</a>
+              <a href="#">Языковая школа</a>
+              <a href="#">Подготовка к поступлению</a>
+              <a href="#">Дополнительные услуги</a>
+              <a href="#">О нас</a>
+            </div>
+          </div>
           <div class="footer_right_item">
-            <span class="footer_right_title">Меню</span>
-            <a href="#" class="footer_right_link">Образование за рубежом</a>
-            <a href="#" class="footer_right_link">Языковая школа</a>
-            <a href="#" class="footer_right_link">Подготовка к поступлению</a>
-            <a href="#" class="footer_right_link">Дополнительные услуги</a>
-            <a href="#" class="footer_right_link">О нас</a>
+            <span class="footer_right_title">Полезное</span>
+            <a href="#" class="footer_right_link">Для родителей</a>
+            <a href="#" class="footer_right_link">Плюсы жизни в Австрии</a>
+            <a href="#" class="footer_right_link">Университеты и программы</a>
+            <a href="#" class="footer_right_link">Важное для поступающих</a>
+            <a href="#" class="footer_right_link">Часто задаваемые вопросы</a>
           </div>
           <div class="footer_right_item">
             <span class="footer_right_title">Полезное</span>
@@ -348,7 +371,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/mobile.js"></script>
   <script>
     (function (w, d, u) {
       var s = d.createElement('script'); s.async = true; s.src = u + '?' + (Date.now() / 60000 | 0);

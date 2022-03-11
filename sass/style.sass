@@ -47,7 +47,7 @@ body
     margin: auto
   &_title
     font-weight: normal
-    font-size: 30px
+    font-size: calc(18px + 12 * (100vw / 1280))
     text-align: center
     color: #2B3042
     margin: 0
@@ -74,7 +74,7 @@ body
         justify-content: center
       &_text
         font-weight: normal
-        font-size: 20px
+        font-size: calc(15px + 5 * (100vw / 1280))
         text-align: center
         color: #2B3042
         margin-top: 5px
@@ -88,9 +88,10 @@ body
   &_container
     margin: auto
     max-width: 1200px
+    padding: 0 10px
   &_title
     font-weight: 600
-    font-size: 30px
+    font-size: calc(18px + 12 * (100vw / 1280))
     text-align: center
     color: #FFFFFF
     margin: 0
@@ -128,6 +129,7 @@ body
   &_container
     margin: auto
     max-width: 900px
+    padding: 0 10px
   &_btns
     display: flex
   &_title
@@ -148,6 +150,7 @@ body
     flex-direction: column
     align-items: center
     justify-content: center
+    padding: 10px
     &_title
       font-weight: 600
       font-size: 25px
@@ -172,30 +175,30 @@ body
   &_btn-sam
     margin-left: 30px
     width: 50%
-    background: #fff
+    background: #766881
     border-radius: 10px
     display: flex
     flex-direction: column
     align-items: center
-    justify-content: center
-    padding: 20px
+    justify-content: space-between
+    padding: 10px
     &_title
       font-weight: 600
       font-size: 25px
-      color: #000
+      color: #fff
     &_text
       font-weight: normal
       font-size: 15px
       text-align: center
-      color: #000
+      color: #fff
       margin-bottom: 20px
     &_btn
       padding: 18px 32px
-      background: #FFB078
+      background: #fff
       border-radius: 4px
       border: none
       cursor: pointer
-      color: #fff
+      color: #766881
       margin: 0 auto
     &_btn:hover
       background: #fff
@@ -226,15 +229,15 @@ body
     align-items: center
     justify-content: center
     margin-top: 33px
-
 .social
-  margin: 70px 0
+  margin: 100px 0
   &_container
     max-width: 1200px
     margin: auto
+    padding: 0 10px
   &_title
     font-weight: 250
-    font-size: 30px
+    font-size: calc(18px + 12 * (100vw / 1280))
     text-align: center
     color: #000000
     margin-bottom: 20px
@@ -247,3 +250,11 @@ body
     text-decoration: none
     &_img
       height: 50px
+
+@media (max-width: 900px)
+  .formuls
+    &_content
+      flex-direction: column
+      align-items: center
+      &_item:not(:last-child)
+        margin-bottom: 20px
