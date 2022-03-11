@@ -410,3 +410,49 @@
 .forward_alena_img {
   height: 400px;
 }
+
+@media (max-width: 800px) {
+  .forward {
+    margin-top: 0;
+  }
+  .forward_form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .forward_form_btn {
+    margin: 0 auto;
+  }
+  .forward_alena {
+    display: none;
+  }
+  .forward_title, .forward_text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 745px) {
+  .main_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main_item {
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+  }
+  .complex_title {
+    margin-top: 0;
+  }
+  .complex_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .complex_item {
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+  }
+}
