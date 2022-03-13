@@ -23,14 +23,14 @@ body {
 
 .main_content_title {
   font-weight: 600;
-  font-size: calc(18px + 27 * (100vw / 1280));
+  font-size: calc(18px + 20 * (100vw / 1280));
   color: #FFFFFF;
 }
 
 .main_content_text {
   display: block;
   font-weight: normal;
-  font-size: calc(16px + 12 * (100vw / 1280));
+  font-size: calc(14px + 10 * (100vw / 1280));
   color: #FFFFFF;
   margin-bottom: 40px;
 }
@@ -47,7 +47,7 @@ body {
 
 .main_content_block_item_text {
   font-weight: normal;
-  font-size: calc(14px + 4 * (100vw / 1280));
+  font-size: calc(12px + 6 * (100vw / 1280));
   color: #FFFFFF;
   margin-left: 10px;
 }
